@@ -1,11 +1,9 @@
-import './App.css'
+import Router from "./routers/Router"
 
 function App() {
   
   return (
-    <div>
-      <h1>React with Vite</h1>
-    </div>
+    <Router/>
   )
 }
 
