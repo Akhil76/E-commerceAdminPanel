@@ -1,12 +1,15 @@
 import { AppBar,Typography,Toolbar,Button } from "@mui/material"
 import IconButton from '@mui/material/IconButton';
-import MenuIcon,{ MenuProps } from '@mui/material/Menu';
-import ListRoundedIcon from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 
 const drawerWidth = 240;
-
-function Header(props:any){
+interface Props{
+  open:Boolean;
+  onClick:()=>{};
+}
+function Header(props:Props){
   
   return (
     <AppBar
@@ -24,7 +27,7 @@ function Header(props:any){
           sx={{ mr: 2, display: { sm: 'none' } }}
           onClick={props.onClick}
         >
-         Menu
+         <MenuIcon/>
         </IconButton>
         <Typography variant="h6" noWrap component="div">
           Admin Dashboard

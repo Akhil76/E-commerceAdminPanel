@@ -5,24 +5,46 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Toolbar, Box, } from '@mui/material';
-import { SidebarDatas } from './SidebarData';
+import { SidebarDatas } from './SidebarData'
 import { Link } from 'react-router-dom';
-import { makeStyles } from '@mui/material';
 
 
 
 
+// const useStyles = makeStyles({
+//   link: {
+//     color: "white",
+//     textDecoration: "none",
+//     fontSize: "16px"
+//   },
+//   icon: {
+//     color: "white",
+//     marginRight: "-20px"
+//   },
+//   text: {
+//     paddingLeft: "0px"
+//   },
+
+// });
 
 const drawerWidth = 240;
-
 function Sidebar(props:any) {
-  
+  //const classes = useStyles();
   const drawer = (
     <div>
       <Toolbar />
       <Divider />
       <List>
-        
+        {SidebarDatas.map((val) => (
+          <Link to={val.Link} >
+          <ListItem button >
+            <ListItemIcon >
+              {val.icon}
+            </ListItemIcon>
+            <ListItemText  primary={val.title} />
+          </ListItem>
+          </Link>
+        ))}
       </List>
       <Divider />
       {/* <List>

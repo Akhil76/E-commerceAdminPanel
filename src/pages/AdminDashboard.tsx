@@ -28,11 +28,12 @@ function AdminDashboard() {
       open={open}
       onClose={handleDrawerClose}
       />
-      <Toolbar/>
+      
       <Box
         component="main"
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
+        <Toolbar/>
         <Typography>AdminDashboard</Typography>
         <Link to="/"><Typography>Home</Typography></Link>
         <Link to="/product"><Typography>Product</Typography></Link>
