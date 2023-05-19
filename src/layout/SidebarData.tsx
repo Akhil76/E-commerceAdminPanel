@@ -1,4 +1,3 @@
-import React from "react";
 import Dashboard from '@mui/icons-material/Dashboard';
 import AddBox from '@mui/icons-material/AddBox';
 import ExposureIcon from '@mui/icons-material/Exposure';
@@ -15,9 +14,9 @@ export const SidebarDatas = [
         Link : "/"
     },
     {
-        title: "Create Account",
+        title: "Add Product",
         icon :<AddBox/> ,
-        Link : "/createaccount" 
+        Link : "/addproduct" 
     },
     {
         title: "Transactions",
