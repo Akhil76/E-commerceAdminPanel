@@ -1,20 +1,22 @@
 import { Typography } from '@mui/material';
 import { styled } from '@mui/system';
+import Card from '../components/Card';
+import Breadcrumb from '../components/Breadcrumb';
 
 
 
 
 
 function Home() {
- 
+
   return (
     <div>
-      <StyledButton>ReadMe</StyledButton>
-      <Typography>Home page</Typography>
-      <Typography>Home page</Typography> 
-      <Typography>Home page</Typography>
-      <MyDiv></MyDiv>
-      
+        <Breadcrumb/>
+        <div style={{display:"flex"}}>
+          <Card/>
+          <Card/>
+          <Card/>
+        </div>
     </div>
   )
 }
@@ -31,8 +33,8 @@ const MyDiv = styled('div')({
   // CSS properties
   color: 'blue',
   backgroundColor: 'yellow',
-  width:"100px",
-  height:"100px"
+  width: "100px",
+  height: "100px"
 
 });
 

@@ -10,6 +10,7 @@ import Home from "../pages/Home";
 import Products from "../pages/Products";
 import Categories from "../pages/Categories";
 import Orders from "../pages/Orders";
+import Charts from "../pages/Charts";
 import Settings from "../pages/Settings";
 import Login from "../pages/Login";
 
@@ -21,6 +22,7 @@ function Router() {
           <Route path="/products" element={<Products/>}/>
           <Route path="/Categories" element={<Categories/>}/>
           <Route path="/orders" element={<Orders/>}/>
+          <Route path="/charts" element={<Charts/>}/>
           <Route path="/settings" element={<Settings/>}/>
         </Route>
         <Route path="/login" element={<Login/>}/>

@@ -5,7 +5,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import CategoryIcon from '@mui/icons-material/Category';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess'; 
-
+import ShowChartIcon from '@mui/icons-material/ShowChart';
 
 export const SidebarDatas = [
     {
@@ -27,6 +27,11 @@ export const SidebarDatas = [
         title: "Orders",
         icon :<CategoryIcon/> ,
         Link : "/orders"    
+    },
+    {
+        title: "Charts",
+        icon :<ShowChartIcon/> ,
+        Link : "/charts"    
     },
     {
         title: "Settings",
