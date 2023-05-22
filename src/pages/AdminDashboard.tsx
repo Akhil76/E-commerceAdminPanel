@@ -1,17 +1,25 @@
 import React from'react';
 import { Box, Typography, CssBaseline, Toolbar } from "@mui/material"
-import { Outlet, Link } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 import Header from "../layout/Header"
 import Sidebar from "../layout/Sidebar"
 
-
+// interface Props{
+  
+//   onClick: () => void;
+//   setOpen:boolean;
+//   open:boolean
+// }
 
 const drawerWidth = 240;
+
+
 function AdminDashboard() {
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
       setOpen(true);
+      
   };
 
   const handleDrawerClose = () => {
@@ -21,9 +29,10 @@ function AdminDashboard() {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <Header 
-       sidbarIsOpened={open}
-       onClick={handleDrawerOpen}
-      />
+        sidbarIsOpened={open} 
+        open={false} 
+        onClick={handleDrawerOpen}
+        />
       <Sidebar 
       open={open}
       onClose={handleDrawerClose}
@@ -35,8 +44,7 @@ function AdminDashboard() {
       >
         <Toolbar/>
         <Typography>AdminDashboard</Typography>
-        <Link to="/"><Typography>Home</Typography></Link>
-        <Link to="/product"><Typography>Product</Typography></Link>
+        
         <Outlet />
       </Box>
     </Box>

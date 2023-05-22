@@ -7,28 +7,14 @@ import ListItemText from '@mui/material/ListItemText';
 import { Toolbar, Box, } from '@mui/material';
 import { SidebarDatas } from './SidebarData'
 import { Link } from 'react-router-dom';
-import { makeStyles, Theme, createStyles } from "@mui/material/styles"; 
 
-
-// const useStyles = makeStyles({
-//   link: {
-//     color: "white",
-//     textDecoration: "none",
-//     fontSize: "16px"
-//   },
-//   icon: {
-//     color: "white",
-//     marginRight: "-20px"
-//   },
-//   text: {
-//     paddingLeft: "0px"
-//   },
-
-// });
+interface Props{
+ onClose:()=>void;
+ open:boolean
+}
 
 const drawerWidth = 240;
-function Sidebar(props:any) {
-  //const classes = useStyles();
+function Sidebar(props:Props) {
   
   const drawer = (
     <div>
@@ -36,9 +22,9 @@ function Sidebar(props:any) {
       <Divider />
       <List>
         {SidebarDatas.map((val) => (
-          <Link to={val.Link} >
+          <Link to={val.Link} style={{textDecoration:'none',color:"white"}}>
           <ListItem button >
-            <ListItemIcon >
+            <ListItemIcon style={{color:"white"}}>
               {val.icon}
             </ListItemIcon>
             <ListItemText  primary={val.title} />
@@ -83,7 +69,7 @@ function Sidebar(props:any) {
         }}
         sx={{
           display: { xs: 'block', sm: 'none' },
-          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth}
+          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth,backgroundColor: "lightslategrey"}
           
           
         }}

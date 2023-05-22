@@ -6,8 +6,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const drawerWidth = 240;
 interface Props{
-  open:Boolean;
-  onClick:()=>{};
+  open:boolean;
+  onClick:() => void;
+  sidbarIsOpened:Boolean
 }
 function Header(props:Props){
   

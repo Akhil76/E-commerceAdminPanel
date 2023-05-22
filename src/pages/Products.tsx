@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material'
 
-function Product() {
+function Products() {
   
   return (
     <div>
@@ -9,4 +9,4 @@ function Product() {
   )
 }
 
-export default Product
+export default Products

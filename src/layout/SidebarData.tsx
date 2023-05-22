@@ -14,24 +14,24 @@ export const SidebarDatas = [
         Link : "/"
     },
     {
-        title: "Add Product",
+        title: "Products",
         icon :<AddBox/> ,
-        Link : "/addproduct" 
+        Link : "/products" 
     },
     {
-        title: "Transactions",
+        title: "Categories",
         icon :<ExposureIcon/> ,
-        Link : "/transaction"
+        Link : "/categories"
     },
     {
-        title: "Account Manager",
+        title: "Orders",
         icon :<CategoryIcon/> ,
-        Link : "/accountmanager"    
+        Link : "/orders"    
     },
     {
         title: "Settings",
         icon :<SettingsIcon/>,
-        Link:"/setting",
+        Link:"/settings",
         ExpandMoreIcon:<ExpandMoreIcon/>,
         ExpandLessIcon:<ExpandLessIcon/>,
         subnav:[
