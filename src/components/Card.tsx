@@ -1,20 +1,20 @@
-import { Typography } from "@mui/material"
+import { Typography,Grid} from "@mui/material"
 
 
 function Card() {
   
   return (
-    <div 
-        style={{
-          height:"150px",
-          width:"350px",
+    <Grid item xs={12} sm={6} md={4} style={{ marginTop:"10px",}}>
+        <div style={{
+          height:"200px",
           borderRadius:"8px",
           background:"red",
-          margin:"10px"
+          marginRight:"10px"
           }}
           >
             <Typography variant='h6' style={{padding:"10px"}}>Name</Typography>
-        </div>
+          </div>
+        </Grid>
   )
 }
 

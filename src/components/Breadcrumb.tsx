@@ -6,10 +6,12 @@ function Breadcrumb() {
   
   return (
     <Breadcrumbs aria-label="breadcrumb" 
-        style={{backgroundColor:"red",
+        style={{
+        backgroundColor:"red",
         height:"40px",
         maxWidth:"100%",
-        padding:"5px"
+        padding:"5px",
+        paddingTop:"7px"
         }}
         >
           <Link underline="hover" color="inherit" href="/">

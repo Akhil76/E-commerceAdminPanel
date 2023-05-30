@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 import { styled } from '@mui/system';
 import Card from '../components/Card';
 import Breadcrumb from '../components/Breadcrumb';
@@ -11,12 +11,12 @@ function Home() {
 
   return (
     <div>
-        <Breadcrumb/>
-        <div style={{display:"flex"}}>
-          <Card/>
-          <Card/>
-          <Card/>
-        </div>
+      <Breadcrumb />
+      <Grid container>
+        <Card />
+        <Card />
+        <Card />
+      </Grid>
     </div>
   )
 }
