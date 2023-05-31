@@ -1,5 +1,5 @@
 import React from'react';
-import { Box, Typography, CssBaseline, Toolbar } from "@mui/material"
+import { Box, CssBaseline, Toolbar } from "@mui/material"
 import { Outlet } from "react-router-dom"
 import Header from "../layout/Header"
 import Sidebar from "../layout/Sidebar"
